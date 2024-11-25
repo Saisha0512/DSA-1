@@ -40,8 +40,6 @@ tickets = [5,1,1,1], k = 0
 8
 ```
 **Explanation**:
-the subsequence must be a non-empty, so we choose the largest number:
-
 - The queue starts as [5,1,1,1], where the kth person is underlined.
 - After the person at the front has bought a ticket, the queue becomes [1,1,1,4] at 1 second.
 - Continuing this process for 3 seconds, the queue becomes [4] at 4 seconds.
