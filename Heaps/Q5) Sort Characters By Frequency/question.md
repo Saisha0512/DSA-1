@@ -29,5 +29,5 @@ Note that 'A' and 'a' are treated as two different characters.
 
 Constraints:
 
-1 <= s.length <= 5 * 10^5<br>
-s consists of uppercase and lowercase English letters and digits.
+- 1 <= s.length <= 5 * 10^5<br>
+- s consists of uppercase and lowercase English letters and digits.
