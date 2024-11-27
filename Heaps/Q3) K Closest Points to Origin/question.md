@@ -29,5 +29,5 @@ Explanation: The answer [[-2,4],[3,3]] would also be accepted.<br>
 
 Constraints:
 
-1 <= k <= points.length <= 10^4 <br>
--10^4 <= xi, yi <= 10^4
+- 1 <= k <= points.length <= 10^4 <br>
+- -10^4 <= xi, yi <= 10^4
