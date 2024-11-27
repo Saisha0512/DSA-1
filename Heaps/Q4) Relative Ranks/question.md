@@ -4,10 +4,10 @@ You are given an integer array score of size n, where score[i] is the score of t
 
 The athletes are placed based on their scores, where the 1st place athlete has the highest score, the 2nd place athlete has the 2nd highest score, and so on. The placement of each athlete determines their rank:
 
--The 1st place athlete's rank is "Gold Medal".<br>
--The 2nd place athlete's rank is "Silver Medal".<br>
--The 3rd place athlete's rank is "Bronze Medal".<br>
--For the 4th place to the nth place athlete, their rank is their placement number (i.e., the xth place athlete's rank is "x").<br>
+- The 1st place athlete's rank is "Gold Medal".<br>
+- The 2nd place athlete's rank is "Silver Medal".<br>
+- The 3rd place athlete's rank is "Bronze Medal".<br>
+- For the 4th place to the nth place athlete, their rank is their placement number (i.e., the xth place athlete's rank is "x").<br>
 
 Return an array answer of size n where answer[i] is the rank of the ith athlete.
 
@@ -26,7 +26,7 @@ Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].<br>
 
 Constraints:
 
-n == score.length<br>
-1 <= n <= 10^4<br>
-0 <= score[i] <= 10^6<br>
-All the values in score are unique.
+- n == score.length<br>
+- 1 <= n <= 10^4<br>
+- 0 <= score[i] <= 10^6<br>
+- All the values in score are unique.
