@@ -33,7 +33,7 @@ int main()
 {
     // Example input array and target.
     vector<int> nums = {2, 7, 11, 15}; 
-    int target = 19;
+    int target = 9;
 
     // Call the twoSum function.
     vector<int> indices = twoSum(nums, target);
@@ -41,7 +41,7 @@ int main()
     // Check if indices are found and print them.
     if (!indices.empty())
     {
-        cout << "Indices: " << indices[0] << ", " << indices[1] << endl;
+        cout << "Target = "<<target<<" can be achieved by adding 2 numbers present at Indices: " << indices[0] << " and " << indices[1] << endl;
     }
     else
     {
