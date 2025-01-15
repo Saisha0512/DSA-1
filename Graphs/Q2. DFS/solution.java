@@ -1,6 +1,7 @@
 import java.util.*;
 
-public class solution {
+public class solution{
+
     public static ArrayList<Integer> dfs(ArrayList<ArrayList<Integer>> adjacencyList){
         Stack<Integer> st = new Stack<>();
         boolean[] vis = new boolean[adjacencyList.size()];
@@ -42,6 +43,6 @@ public class solution {
         ArrayList<Integer> result = dfs(adj);
         System.out.println(result); 
         
-        // Output should be [0, 2, 4, 3, 1]
+        // Output should be [0, 2, 4, 3, 1]
     }
 }
