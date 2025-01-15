@@ -3,7 +3,7 @@ class Solution {
         if(n==1||n==2){ //base cases
             return n;
         }
-        int a = new int[n]; //dp array
+        int[]a = new int[n]; //dp array
         a[0]=1;
         a[1]=2;
         for(int i = 2;i<n; i++){
