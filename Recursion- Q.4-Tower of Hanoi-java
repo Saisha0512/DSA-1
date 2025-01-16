@@ -1,4 +1,4 @@
-public class TowerOfHanoi24{        
+public class TowerOfHanoi{        
         public static int toh(int n, int fromRod, int toRod, int auxRod) {
             if (n == 0) {
                 return 0; 
