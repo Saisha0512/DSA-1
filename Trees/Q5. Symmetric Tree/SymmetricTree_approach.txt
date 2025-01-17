@@ -1,0 +1,17 @@
+// Recursive Approach
+1. Firstly, we check if root is null , if it is that means it is a symmetric tree
+2. if root is not null that means we have to check for its children nodes --> 
+a. Check for root's left and right children everytime the conditions where we might false i.e. if either of the children
+   is null or the data values of both children dont match
+b. If this condition is not true that means we can recursvely check the node1's left and node2's right && node1'right and node2's left
+3. if both recursive calls return true, then we will call the tree as symmetric
+
+// Iterative Approach
+--> Since it is an iterative approach, we have to traverse level wise and at every level we have to check if the 
+node1's left and node2's right always matches (Using queue)
+--> if they match that means that portion of tree is symmetric and then for the next iteration we will again add
+the nodes in the order -
+1. node1's left and node2's right
+2. node1's right and node2's left
+
+i.e. everytime we are checking the first two nodes if they match then we will add their children in the above order
