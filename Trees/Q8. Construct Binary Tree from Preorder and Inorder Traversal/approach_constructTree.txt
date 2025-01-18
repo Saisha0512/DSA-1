@@ -1,0 +1,16 @@
+* The goal is to construct binary tree from inorder and preorder traversal
+
+// RECURSIVE APPROACH
+-> We know that inorder traversal(LNR) can tell us about the nodes that are on the left or right side of the root node
+and preorder traversal(NLR) tells us about the position of the root node.
+-> Hence, by using inorder and preorder sequences, we can build a unique binary tree.
+
+Step 1. Start from the first index in preorder array and it will serve as the root node of the tree.
+Step 2. Then, find the position of the root node created in the inorder array so that the array can be split 
+into two parts that will form the left and right subtree.
+Step 3. Once the position is located in the inorder array, the array from index (start, pos-1) will contain the 
+nodes in left subtree and the array from index (pos+1, end) will contain the nodes in right subtree.
+Step 4. Make recursive calls for building the left and right subtree.
+-> The thing that needs to be determined is the index that will now become the root of left and right subtrees.
+-> If root was at index (idx), then root of left subtree would be (idx+1) and right subtree would be (idx+(pos-start+1)).
+Step 5. Return the root node.

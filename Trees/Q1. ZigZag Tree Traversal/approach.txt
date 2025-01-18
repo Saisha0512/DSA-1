@@ -1,0 +1,12 @@
+* The goal is to add the nodes level wise in zig zag order
+
+1. To take care of the changing levels, we can keep a boolean variable flag.
+2. Since it is level order traversal, we use a queue to store the nodes.
+3. Until the queue becomes empty, everytime we will calculate the size of queue, and check if they have to be 
+added in the order in which they are present or they have to be added in the reverse order in the list
+4. If at a level, the nodes are to be added in the order in which they are present in queue, we will add them in 
+the linked list at the last position, however if the nodes have to be added in reverse order, then we will
+add them in the linked list at the first position. 
+5. At each level, we will remove the nodes one by one, and with every node removed, we have to check how they will
+be added in the linked list, once they are added, we will add their left and right children nodes in the queue.
+6. When all the nodes of a level are removed from queue, we will make the flag variable's behaviour opposite.
