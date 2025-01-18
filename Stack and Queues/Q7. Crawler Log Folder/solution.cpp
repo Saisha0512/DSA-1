@@ -1,4 +1,3 @@
-
     int minOperations(vector<string>& logs) {
         stack<string>s;
 
