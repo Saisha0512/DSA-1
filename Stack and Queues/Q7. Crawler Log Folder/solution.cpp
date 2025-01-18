@@ -22,5 +22,3 @@
         }else{
             return s.size();
         }
-    }
-};
