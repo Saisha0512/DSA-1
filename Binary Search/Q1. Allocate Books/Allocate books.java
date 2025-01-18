@@ -16,18 +16,16 @@ public class Solution {
       //low represents the minimum number of pages a student can read
       //high represents the maximum number of pages a student can read
         int result = 0;
-
         while (low <= high) {
-            int mid = low + (high - low) / 2;
-            int studentsRequired = 1;
-            int currentSum = 0;
-
+            int mid = low + (high - low) / 2; //current max number of pages to be alloted to a student (to be minimised)
+            int studentsRequired = 1; //Number of students required to allocate books
+            int currentSum = 0; //Pages allocated to current studen
             boolean flag = false;
             for (int i = 0; i < arr.size(); i++) {
-                if (currentSum + arr.get(i) > mid) {
+                if (currentSum + arr.get(i) > mid) { //if this val> max number of pages to be alloted, number of students need to be increased.
                     studentsRequired++;
-                    currentSum = arr.get(i);
-                    if (studentsRequired > m) {
+                    currentSum = arr.get(i); //new book is assigned to current student
+                    if (studentsRequired > m) { //if number of students needed exceeds the number of students, this arrangement is not possible.
                         flag = true;
                         break;
                     }
