@@ -1,5 +1,4 @@
-class Solution {
-public:
+
     int minOperations(vector<string>& logs) {
         stack<string>s;
 
