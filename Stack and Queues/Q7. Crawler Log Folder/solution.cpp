@@ -21,3 +21,4 @@ int minOperations(vector<string>& logs) {
     }else{
         return s.size();
     }
+}
