@@ -1,0 +1,17 @@
+ALGORITHM:
+
+    1. Input Validation:
+            (a) Read two strings str and goal from the user.
+            (b) Ensure both strings are non-null and have the same length for further checks. If lengths differ, goal cannot be a rotation of str.
+
+    2. Concatenation Logic:
+            (a) Concatenate the original string str with itself. This extended string (str + str) contains all possible rotations of the original string.
+
+            For example:
+            If str = "abc", then str + str = "abcabc". The rotations of "abc" ("abc", "bca", "cab") are substrings of "abcabc".
+
+    3. Substring Check:
+            (a) Use the contains method to check if the goal string exists as a substring in str + str.
+
+    4. Boolean Output:
+            (a) Return true if goal is a substring of str + str and the lengths match; otherwise, return false.
